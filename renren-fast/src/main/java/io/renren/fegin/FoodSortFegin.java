@@ -49,8 +49,8 @@ public interface FoodSortFegin {
                                        @PathVariable Integer num);
 
     //查询食物的详情信息
-    @RequestMapping("food/foodinfo/select/infomation/{foodId}")
-    public R selects(@PathVariable Integer foodId);
+    @RequestMapping("food/foodinfo/select/infomation")
+    public R selects(@RequestParam Integer foodId);
 
     /**
      * 保存审核通过的信息
